@@ -11,6 +11,7 @@ import Alamofire
 
 class AddToCartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    
     // MARK: - addToCartTableView DataSource Method Starts
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -25,6 +26,7 @@ class AddToCartViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.carButton.tag = indexPath.row
         cell.carButton.addTarget(self, action: #selector(addItemToCart), for: .touchUpInside)
         return cell
+
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
